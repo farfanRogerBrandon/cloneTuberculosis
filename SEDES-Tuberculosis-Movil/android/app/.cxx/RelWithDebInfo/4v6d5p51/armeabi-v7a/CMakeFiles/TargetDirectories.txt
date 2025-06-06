@@ -1,0 +1,2 @@
+C:/Users/ANETT/Downloads/SEDES-Tuberculosis-Movil/SEDES-Tuberculosis-Movil/android/app/.cxx/RelWithDebInfo/4v6d5p51/armeabi-v7a/CMakeFiles/edit_cache.dir
+C:/Users/ANETT/Downloads/SEDES-Tuberculosis-Movil/SEDES-Tuberculosis-Movil/android/app/.cxx/RelWithDebInfo/4v6d5p51/armeabi-v7a/CMakeFiles/rebuild_cache.dir

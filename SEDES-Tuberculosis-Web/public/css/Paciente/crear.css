@@ -1,0 +1,211 @@
+/* ==================== ESTILOS GENERALES ==================== */
+body {
+    background: #F2F1E4;
+    min-height: 100vh;
+    font-family: 'Arial', sans-serif;
+}
+
+.page-container {
+    padding: 2rem 0;
+}
+
+/* ==================== ENCABEZADO Y LOGO ==================== */
+.registration-header {
+    text-align: center;
+    margin-bottom: 2rem;
+    animation: fadeInDown 1s ease;
+    color: #2B385B;
+}
+
+.registration-logo {
+    width: 120px;
+    transition: transform 0.3s ease;
+}
+
+.registration-logo:hover {
+    transform: scale(1.1);
+}
+
+/* ==================== TARJETA DE FORMULARIO ==================== */
+.registration-card {
+    border: none;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(43, 56, 91, 0.1);
+    background: #F2F1E4;
+    overflow: hidden;
+}
+
+/* ==================== CABECERA DEL FORMULARIO ==================== */
+.form-header {
+    background: #2B385B;
+    color: #F2F1E4;
+    padding: 1rem;
+    border-radius: 15px 15px 0 0;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.form-header i {
+    color: #F2F1E4;
+}
+
+/* ==================== TÍTULOS DE SECCIÓN ==================== */
+.section-title {
+    color: #2B385B;
+    border-bottom: 2px solid #2B385B;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.section-title i {
+    color: #2B385B;
+}
+
+/* ==================== CAMPOS DE FORMULARIO ==================== */
+.input-group {
+    position: relative;
+    margin-bottom: 1.5rem;
+    animation: fadeInUp 0.5s ease;
+}
+
+.input-group i {
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #2B385B;
+    z-index: 1;
+}
+
+/* ==================== ESTILOS DE INPUTS ==================== */
+.form-control, .form-select {
+    padding-left: 40px !important;
+    border-radius: 8px;
+    border: 2px solid #2B385B;
+    background: #F2F1E4;
+    color: #2B385B;
+    transition: all 0.3s ease;
+}
+
+.form-control:focus, .form-select:focus {
+    border-color: #2B385B;
+    box-shadow: 0 0 10px rgba(43, 56, 91, 0.2);
+    transform: scale(1.02);
+    background: #F2F1E4;
+    color: #2B385B;
+}
+
+.form-floating label {
+    padding-left: 40px;
+    color: #2B385B;
+}
+
+/* ==================== BOTONES ==================== */
+.btn-primary {
+    background: #2B385B;
+    border: none;
+    padding: 0.75rem 2rem;
+    border-radius: 25px;
+    color: #F2F1E4;
+    transition: all 0.3s ease;
+}
+
+.btn-primary i {
+    color: #F2F1E4;
+}
+
+.btn-primary:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(43, 56, 91, 0.4);
+    background: #2B385B;
+    color: #F2F1E4;
+}
+
+/* ==================== GRUPO DE GÉNERO ==================== */
+.gender-group .btn {
+    border-radius: 20px;
+    margin: 0 0.5rem;
+    transition: all 0.3s ease;
+    border: 2px solid #2B385B;
+    color: #2B385B;
+    background: #F2F1E4;
+}
+
+.gender-group .btn:hover {
+    transform: scale(1.05);
+    background: #2B385B;
+    color: #F2F1E4;
+}
+
+.gender-group .btn i {
+    color: #2B385B;
+}
+
+.gender-group .btn:hover i {
+    color: #F2F1E4;
+}
+
+.gender-group .form-label {
+    color: #2B385B;
+}
+
+.gender-group .form-label i {
+    color: #2B385B;
+}
+
+/* ==================== ESTADOS DE CARGA Y MENSAJES ==================== */
+.loading {
+    display: none;
+    color: #2B385B;
+    font-weight: bold;
+}
+
+.loading i {
+    color: #2B385B;
+}
+
+.error-message {
+    display: none;
+    color: #2B385B;
+    margin-top: 1rem;
+}
+
+/* ==================== MODAL DE ÉXITO ==================== */
+.success-animation i {
+    font-size: 3rem;
+    color: #2B385B;
+    animation: bounceIn 1s ease;
+}
+
+.modal-content {
+    background: #F2F1E4;
+    color: #2B385B;
+}
+
+.text-muted {
+    color: #2B385B !important;
+    opacity: 0.7;
+}
+
+/* ==================== ANIMACIONES ==================== */
+@keyframes fadeInDown {
+    from { opacity: 0; transform: translateY(-20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes bounceIn {
+    0% { transform: scale(0); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+/* ==================== MENSAJES DE VALIDACIÓN ==================== */
+.invalid-feedback {
+    display: block !important; 
+}
